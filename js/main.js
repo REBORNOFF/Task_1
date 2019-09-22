@@ -1,4 +1,26 @@
-'use strict';
+"use strict"
+
+let startButton = document.getElementById("start"), // Получить кнопку "Начать расчет" через id
+    budgetValue = document.getElementsByClassName("budget-value")[0],
+    daybudgetValue = document.getElementsByClassName("daybudget-value")[0],
+    levelValue = document.getElementsByClassName("level-value")[0],
+    expensesValue = document.getElementsByClassName("expenses-value")[0], 
+    optionalexpensesValue = document.getElementsByClassName("optionalexpenses-value")[0],
+    incomeValue = document.getElementsByClassName("income-value")[0],
+    monthsavingsValue = document.getElementsByClassName("monthsavings-value")[0],
+    yearsavingsValue = document.getElementsByClassName("yearsavings-value")[0],
+
+    expensesItem = document.getElementsByClassName("expenses-item")[0],
+    expensesItemBtn = document.getElementsByTagName("button")[0],
+    countBudgetBtn = document.getElementsByTagName("button")[1],
+    optionalexpensesItem = document.querySelectorAll(".optionalexpenses-item"),
+    chooseIncome = document.querySelector(".choose-income"),
+    savings = document.querySelector("#savings"),
+    sum = document.querySelector("#sum"),
+    percent = document.querySelector("#percent"),
+    yearValue = document.querySelector(".year-value"),
+    monthValue = document.querySelector(".month-value"), 
+    dayValue = document.querySelector(".day-value ");
 
 let money, time;
 
@@ -125,3 +147,4 @@ for (let key in appData) {
 //     console.log("_+++");
 // }
 // while (i < 2);
+
