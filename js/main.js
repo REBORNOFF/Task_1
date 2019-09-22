@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 let startButton = document.getElementById("start"), // Получить кнопку "Начать расчет" через id
     budgetValue = document.getElementsByClassName("budget-value")[0],
